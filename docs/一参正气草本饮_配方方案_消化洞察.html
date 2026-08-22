@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>一参正气草本饮_配方方案_消化洞察</title>
+<style>
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f7f3ee;
+  color: #2b2320;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75;
+}
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fffdf9;
+  padding: 48px 56px;
+  box-shadow: 0 2px 24px rgba(90,30,20,.12);
+  min-height: 100vh;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Songti SC", "STSong", serif;
+  color: #7a1f1a;
+  border-bottom: 3px solid #7a1f1a;
+  padding-bottom: 14px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 22px;
+  font-family: "Songti SC", "STSong", serif;
+  color: #7a1f1a;
+  margin-top: 40px;
+  padding-left: 12px;
+  border-left: 5px solid #c9a227;
+}
+h3 {
+  font-size: 18px;
+  color: #4a2c22;
+  margin-top: 30px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 14.5px;
+  background: #fff;
+}
+th {
+  background: #7a1f1a;
+  color: #f4e6c8;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+td {
+  border: 1px solid #e8ddd2;
+  padding: 9px 12px;
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #fbf7f0; }
+strong { color: #8a231c; }
+blockquote {
+  border-left: 4px solid #c9a227;
+  background: #fdf7e8;
+  margin: 16px 0;
+  padding: 12px 18px;
+  color: #4a3a28;
+  border-radius: 4px;
+}
+code {
+  background: #f0e8dc;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #7a1f1a;
+}
+hr {
+  border: none;
+  border-top: 1px dashed #d8c8b8;
+  margin: 30px 0;
+}
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+h1 em, h2 em { font-style: normal; color: #8a6d2f; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>一参正气草本饮 · 配方方案 消化洞察</h1>
+<blockquote>
+<p>来源目录：<code>/Volumes/Elements SE/东北素材/一参正气/资料/</code>（只读，未改动任何原始文件）<br />
+处理方式：docx 用 python-docx（段落+表格）；<code>.doc</code> 用 macOS textutil 转换；txt 直接读；pdf 用 PyMuPDF 抽文字层；包装 pdf 无文字层→渲染后视觉读取。<br />
+本文件为<strong>结构化洞察版</strong>，供内容/合规/产品决策用。重点是把"私人订制14个方案"+"药食同源方案"中的每张配方表，转成"方N/名称/体质/症状/关键配伍"表，并把所有<strong>不能做宣传</strong>的成分和合规红线单独标出。</p>
+</blockquote>
+<hr />
+<h2>一、产品主线（一参正气草本饮）</h2>
+<p><strong>产品定位</strong>：开成高俪"一参正气草本饮"。以<strong>市级非遗高丽参（红参）</strong>为基底，针对不同体质配伍其它道地同源草本，做成便携饮品。<strong>一盒30支，一支10ml（塑料袋装/小袋装）</strong>。</p>
+<h3>1. 三种配方（主产品线）</h3>
+<p>三种配方的原料（来自"调教ai脚本概况.txt"主口径），经核对：<strong>三种配方去重后恰好 20 味原料</strong> → 对得上"<strong>20味道地原料</strong>"这一卖点。</p>
+<table>
+<thead>
+<tr>
+<th>配方</th>
+<th>定位/体质</th>
+<th>原料（原文顺序）</th>
+<th>味数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>滋补方</strong></td>
+<td>补气血（气虚+血虚）</td>
+<td>红枣、麦冬、玫瑰、西洋参、红参、茯苓、橘皮、阿胶、黄芪、党参、山楂、甘草、灵芝、熟地黄</td>
+<td>14</td>
+</tr>
+<tr>
+<td><strong>阳虚方</strong></td>
+<td>阳气亏虚（气虚升级）</td>
+<td>红枣、肉桂、枸杞、甘草、红参、山茱萸、灵芝、山药、熟地黄、山楂</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>阴虚方</strong></td>
+<td>气阴两虚（气虚+阴虚）</td>
+<td>红枣、西洋参、桑葚、黄芪、红参、甘草、生地黄、麦冬、灵芝、山楂</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>20味道地原料核对</strong>：三配方合并去重 = 红枣、麦冬、玫瑰、西洋参、红参、茯苓、橘皮、阿胶、黄芪、党参、山楂、甘草、灵芝、熟地黄、肉桂、枸杞、山茱萸、山药、桑葚、生地黄，恰好 <strong>20 味</strong>。→ "20味"卖点是持平的，可放心用。</p>
+</blockquote>
+<p><strong>包装设计稿（红参草本饮包装设计，PDF）对应的三款成品命名</strong>（与上方体质的映射，作为对外口径）：<br />
+- <strong>方1 红参阿胶草本饮</strong>（红色包装）↔ 滋补方/补气血<br />
+- <strong>方2 西洋参黄芪草本饮</strong>（绿色包装）↔ 阴虚方/气阴两虚<br />
+- <strong>方3 红参肉桂山药草本饮</strong>（橙色包装）↔ 阳虚方/阳气亏虚</p>
+<h3>2. 工艺流程</h3>
+<blockquote>
+<p>精准称料 → <strong>20倍水提</strong>（释放原材有效成分）→ <strong>离心</strong>（去杂质，口感细腻）→ <strong>17倍低温浓缩</strong>（锁鲜、保留纯粹）→ 灌装 → 灭菌。<br />
+附加卖点中另有"<strong>5小时鲜制</strong>"。</p>
+</blockquote>
+<h3>3. 主要卖点</h3>
+<p>非遗老参为基底、20味道地原料、工艺、科学配伍、产品形态（便携小袋）、<strong>无需自己搭配配方</strong>、口感、<strong>5小时鲜制</strong>、<strong>便携</strong>、<strong>温和</strong>。</p>
+<h3>4. 目标人群</h3>
+<ul>
+<li>虚不受补（很虚不敢补、吃点就上火）</li>
+<li>亏气血、阴虚、阳虚</li>
+<li>怕传统滋补方式麻烦</li>
+<li>上班白领（想随时随地补充能量）</li>
+<li>需要调养的中老年人</li>
+</ul>
+<hr />
+<h2>二、体质辨症配方表（私人订制14个方案 + 药食同源方案）</h2>
+<blockquote>
+<p>⚠️ <strong>两套文件夹编号（方N）存在冲突</strong>，且同名方在两处克重、配料不完全一致。下表以"配方内容"为主键列出，跨文件夹冲突在"冲突"列注明。<br />
+编排说明：<code>气血管理.docx</code>（两处相同）<strong>段落顺序=方2/方3/方1，而表格顺序=方1/方2/方3 对应的内容是表格2/表格3/表格1</strong>——即"方1=补气血=表格3"、"方2=气阴两虚=表格1"、"方3=阳虚=表格2"。下表按<strong>方号语义</strong>对齐。</p>
+</blockquote>
+<h3>私人订制14个方案（黑五类风险版，含大量纯药食材）</h3>
+<table>
+<thead>
+<tr>
+<th>方N</th>
+<th>名称</th>
+<th>体质/症状表现</th>
+<th>关键配伍（克重）</th>
+<th>风险/不能宣传</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>方1</strong></td>
+<td>红参阿胶饮（补气血）</td>
+<td>气虚+血虚：神疲乏力、气短懒言、面色萎黄或苍白、头晕眼花、心悸失眠</td>
+<td><strong>红参0.2、西洋参0.5、黄芪0.5、灵芝0.5、麦冬0.5、当归0.5、阿胶0.3、熟地黄0.5、玫瑰花0.5、大枣1.5、甘草0.5、党参0.5、茯苓0.5、陈皮0.5</strong>＝7.5克。注：有失眠者加酸枣仁0.5+百合0.5</td>
+<td>阿胶/熟地黄/当归为药食材，需注意</td>
+</tr>
+<tr>
+<td><strong>方2</strong></td>
+<td>西洋参黄芪饮（气阴两虚）</td>
+<td>气虚（神疲乏力、气短懒言）+阴虚（口干咽燥、手脚心热、潮热盗汗、舌红少苔）</td>
+<td><strong>红参0.2、西洋参2、黄芪0.5、桑葚1、麦冬0.5、大枣1.5、甘草0.5、生地黄0.5</strong>＝6.7克</td>
+<td>生地黄为药食材，需注意</td>
+</tr>
+<tr>
+<td><strong>方3</strong></td>
+<td>红参肉桂山药饮（阳气亏虚）</td>
+<td>气虚升级：神疲乏力、气短懒言、怕冷、手脚凉、舌淡有齿痕</td>
+<td><strong>红参0.5、肉桂1、熟地黄0.5、山药0.5、山茱萸0.3、枸杞子0.5、大枣2、甘草0.5、灵芝0.5</strong>＝6.3克。注：有失眠者加酸枣仁0.5+百合0.5</td>
+<td>肉桂/熟地黄/山茱萸药食材</td>
+</tr>
+<tr>
+<td><strong>方4</strong></td>
+<td>灵芝党参阿胶饮（气血平和方）</td>
+<td>平补气血、安神祛湿</td>
+<td><strong>灵芝1、党参1.5、黄芪0.5、陈皮0.5、茯苓1、甘草0.5、大枣1.5、阿胶0.5、当归0.5</strong>＝7.5克</td>
+<td>阿胶/当归为药食材</td>
+</tr>
+<tr>
+<td><strong>方4</strong>（冲突）</td>
+<td>桃红四物饮</td>
+<td>（该文档只写"方4，桃红四物饮"，未单列症状；依方名属活血调经/血虚瘀滞）</td>
+<td><strong>桃仁0.5、红花0.5、当归1、熟地黄1.5、玫瑰花0.2、小茴香0.2、大枣2.5、川芎0.6、白芍1</strong>＝8克</td>
+<td>🔴 <strong>"为了效果，添加川芎0.6+白芍1，这两味药不能做宣传!"</strong></td>
+</tr>
+<tr>
+<td><strong>方6</strong></td>
+<td>桃仁红花饮</td>
+<td>（未单列症状；依方名属血瘀通络）</td>
+<td><strong>桃仁1、红花0.5、山楂0.5、黑木耳1、葛根0.5、玫瑰花0.5、陈皮0.3、大枣2、银杏叶1</strong>＝7.3克。注："2高方用藏红花"（红花可升级为藏红花）</td>
+<td>🔴 <strong>"银杏叶不能做宣传"</strong>；红花/藏红花为药食材</td>
+</tr>
+<tr>
+<td><strong>方7</strong></td>
+<td>酸枣仁百合饮</td>
+<td>虚烦不眠、多梦</td>
+<td><strong>酸枣仁2、百合1、龙眼肉1、茯苓0.5、浮小麦0.5、甘草0.5、远志0.3、大枣1.5</strong>＝7.3克</td>
+<td>🔴 <strong>"远志不易做宣传"</strong></td>
+</tr>
+<tr>
+<td><strong>方8</strong></td>
+<td>薏仁茯苓饮</td>
+<td>头发脸部爱出油、舌苔厚腻、大便粘马桶</td>
+<td><strong>陈皮0.3、茯苓0.5、炒白扁豆1、砂仁0.5、薏苡仁2、芡实1、五指毛桃1、大枣1.5</strong>＝7.8克</td>
+<td>砂仁/五指毛桃药食材；砂仁含"安胎"表述需规避</td>
+</tr>
+<tr>
+<td><strong>方9</strong></td>
+<td>菊花薏仁饮（湿热方）</td>
+<td>舌苔黄腻、小便黄、易生痤疮</td>
+<td><strong>薏苡仁2、赤小豆1、栀子0.6、炒白扁豆1、菊花0.2、甘草0.5、大枣1.5</strong>＝6.8克</td>
+<td>栀子为药食材（"泻火解毒/凉血"功效需规避）</td>
+</tr>
+<tr>
+<td><strong>方10</strong></td>
+<td>陈皮山药饮</td>
+<td>脾胃虚弱、消化不良</td>
+<td><strong>党参1.5、陈皮0.5、茯苓0.5、甘草0.5、山药2、猴头菇1、大枣1.5</strong>＝7.5克</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>方11</strong></td>
+<td>降血压（玉米须桑叶饮）</td>
+<td>高血压相关（头晕目眩、腰膝酸痛）</td>
+<td><strong>桑叶0.3、决明子0.3、杜仲叶0.3、菊花0.3、玉米须3、大枣2</strong>＝6.2克</td>
+<td>🔴 <strong>疾病名"降血压"本身即违规</strong>；含"降压/高血压"表述须规避；杜仲叶/桑叶/决明子药食材</td>
+</tr>
+<tr>
+<td><strong>方12</strong></td>
+<td>降血脂（山楂绿茶饮）</td>
+<td>高血脂相关</td>
+<td><strong>山楂1、荷叶0.5、决明子0.5、绿茶1、桑叶1、银杏叶1、大枣2</strong>＝7克</td>
+<td>🔴 <strong>"银杏叶不做宣传"</strong>；疾病名"降血脂"+化浊降脂等功效须规避</td>
+</tr>
+<tr>
+<td><strong>方13</strong></td>
+<td>降血糖（麦冬苦瓜饮）</td>
+<td>高血糖/消渴相关</td>
+<td><strong>苦瓜1、肉桂0.5、桑叶1、玉竹1、麦冬1、玉米须1.5、大枣2</strong>＝8克</td>
+<td>🔴 疾病名"降血糖"+"类胰岛素/植物胰岛素/胰岛素敏感性"均为功效/医药表述，<strong>高危须规避</strong></td>
+</tr>
+<tr>
+<td><strong>方14</strong></td>
+<td>山楂麦芽饮（儿童消食方）</td>
+<td>小孩不爱吃饭、消化不良、体瘦</td>
+<td><strong>焦山楂0.5、炒麦芽1、鸡内金0.5、山药1、茯苓1、陈皮0.3、大枣3</strong>＝7.3克</td>
+<td>鸡内金为药食材；"儿童/体瘦"针对人群表述需注意（非成人）</td>
+</tr>
+</tbody>
+</table>
+<h3>药食同源方案（同名/近似方的"安全版"，克重有差异）</h3>
+<table>
+<thead>
+<tr>
+<th>方N</th>
+<th>名称</th>
+<th>体质/症状表现</th>
+<th>关键配伍（克重）</th>
+<th>风险/不能宣传</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>方5</td>
+<td>红参山药饮</td>
+<td>脾胃虚弱</td>
+<td><strong>红参0.2、党参1.5、陈皮0.5、茯苓0.5、甘草0.5、山药2.5、大枣1.5</strong>＝7.2克</td>
+<td>—</td>
+</tr>
+<tr>
+<td>方1/2/3</td>
+<td>红参阿胶饮/西洋参黄芪饮/红参肉桂山药饮</td>
+<td>与私人订制版相同（补气血/气阴两虚/阳虚）</td>
+<td>与私人订制版相同（克重一致）</td>
+<td>同前</td>
+</tr>
+<tr>
+<td>方4</td>
+<td>桃红四物饮</td>
+<td>（未单列症状）</td>
+<td><strong>桃仁1、红花1、当归0.5、熟地黄0.5、玫瑰花0.5、小茴香0.5、大枣2.5、甘草0.5、川芎(克重空)、白芍(克重空)</strong>＝7克</td>
+<td>🔴 <strong>"为了效果，添加川芎0.5+白芍0.5，不妥"</strong>；川芎/白芍药食材</td>
+</tr>
+<tr>
+<td>方6</td>
+<td>三七红花饮（血瘀通络桃红饮）</td>
+<td>（未单列症状；依方名属血瘀通络）</td>
+<td><strong>桃仁1、红花0.5、山楂0.5、黑木耳1、葛根0.5、玫瑰花0.5、陈皮0.3、大枣1.5、三七0.5</strong>＝6.3克。注："2高方用藏红花"</td>
+<td>⚠️ 新增<strong>三七0.5</strong>（三七为纯药食材，非药食同源，需格外注意）；红花/藏红花药食材</td>
+</tr>
+<tr>
+<td>方7</td>
+<td>酸枣仁百合饮</td>
+<td>失眠</td>
+<td><strong>酸枣仁2、百合1、龙眼肉1、茯苓0.5、浮小麦0.5、甘草0.5、大枣1</strong>＝6.5克（此版<strong>已去掉远志</strong>）</td>
+<td>—（已规避远志）</td>
+</tr>
+<tr>
+<td>方8</td>
+<td>薏仁茯苓饮祛湿方新版</td>
+<td>祛湿（同私人订制方8，另加"用量"参考栏 3-10/9-15 等）</td>
+<td><strong>陈皮0.3、茯苓0.5、白扁豆1、砂仁0.5、薏苡仁2、芡实1、五指毛桃1、大枣1.5</strong>＝7.8克</td>
+<td>砂仁含"安胎"表述；五指毛桃祛痰等功效需规避</td>
+</tr>
+<tr>
+<td>方9</td>
+<td>薏仁菊花饮（湿热方）</td>
+<td>同私人订制方9（湿热）</td>
+<td><strong>薏苡仁2、赤小豆1、栀子0.6、炒白扁豆1、菊花0.2、甘草0.5、大枣1</strong>＝6.3克</td>
+<td>栀子药食材</td>
+</tr>
+<tr>
+<td>方10</td>
+<td>党参阿胶饮（气血平和方）</td>
+<td>平补气血、安神祛湿</td>
+<td><strong>灵芝1、党参1.5、陈皮0.5、茯苓1、甘草0.5、大枣1、阿胶0.5</strong>＝6克（此版去掉了黄芪/当归）</td>
+<td>阿胶药食材</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>两套文件夹的关系</strong>：本质是<strong>同一批配方</strong>的两版。"私人订制14个方案"（含降血压/降血脂/降血糖、儿童消食这些<strong>疾病命名+功效型</strong>方案，含川芎/白芍/银杏叶/远志/三七等<strong>纯药食材</strong>）——属<strong>黑五类高风险版</strong>；"药食同源方案"则倾向<strong>精简、去掉部分纯药食材（如远志、黄芪、当归）+ 补充用量参考栏</strong>，但<strong>并未完全清洗干净</strong>（仍含红花/藏红花、三七、川芎/白芍标"不妥"，脾胃虚弱方5、桃红四物、三七红花等仍带药性功效表述）。</p>
+</blockquote>
+<hr />
+<h2>三、合规红线（"不能宣传/规避/黑五类"汇总）</h2>
+<h3>3.1 明确的"不能做宣传"成分（文档原文逐条）</h3>
+<table>
+<thead>
+<tr>
+<th>成本</th>
+<th>出现位置</th>
+<th>原文表述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>川芎 + 白芍</strong></td>
+<td>私人订制/5-桃红四物饮.docx</td>
+<td>"为了效果，添加川芎0.6+白芍1，<strong>这两味药不能做宣传!</strong>"</td>
+</tr>
+<tr>
+<td><strong>川芎 + 白芍</strong></td>
+<td>药食同源/桃红四物饮.docx</td>
+<td>"为了效果，添加川芎0.5+白芍0.5，<strong>不妥</strong>"</td>
+</tr>
+<tr>
+<td><strong>银杏叶</strong></td>
+<td>私人订制/6-桃仁红花饮.docx</td>
+<td>"<strong>银杏叶不能做宣传</strong>"</td>
+</tr>
+<tr>
+<td><strong>银杏叶</strong></td>
+<td>私人订制/12-降血脂.docx</td>
+<td>"<strong>银杏叶不做宣传</strong>"</td>
+</tr>
+<tr>
+<td><strong>远志</strong></td>
+<td>私人订制/7-酸枣仁百合饮.docx</td>
+<td>"<strong>远志不易做宣传</strong>"</td>
+</tr>
+<tr>
+<td><strong>三七</strong></td>
+<td>药食同源/血瘀通络桃红饮.docx</td>
+<td>新增"<strong>三七0.5</strong>"（纯药食材，未标注，但<strong>非药食同源</strong>，应视同需规避）</td>
+</tr>
+<tr>
+<td><strong>藏红花（红花升级版）</strong></td>
+<td>桃仁红花饮/三七红花饮</td>
+<td>"<strong>2高方用藏红花</strong>"（藏红花为纯药食材）</td>
+</tr>
+</tbody>
+</table>
+<h3>3.2 黑五类 / 功效 / 疾病表述红线（文档本身即高危，脚本必须规避）</h3>
+<blockquote>
+<p>来自"调教ai脚本概况.txt"：<strong>"我们是'黑五类'产品，脚本内容要严格规避违规（养生相关、医药相关、疾病、功效等），但又要想办法暗示让人知道服用我们产品之后给身体带来改善。"</strong> 且<strong>视频≥≤1分钟</strong>。</p>
+</blockquote>
+<p>以下表述在文档中出现，<strong>对外内容一律规避</strong>（内部备注可用）：</p>
+<ul>
+<li><strong>疾病名</strong>：降血压（方11）、降血脂（方12）、降血糖（方13）、高血压、糖尿病、胆结石、中风偏瘫、高脂血症、消渴。</li>
+<li><strong>功效/药理表述</strong>：大补元气、补气行血、增强免疫力、补血活血、活血祛瘀、化浊降脂、降压、降血脂、降血糖、类胰岛素/植物胰岛素/提高胰岛素敏感性、抑制胆固醇/脂质沉积、抗凝/降低血液粘稠度、凉血解毒、解肌退热、祛痰平喘、安神益智。</li>
+<li><strong>中药"主治"表述</strong>：各药材的功效列大量为《中国药典》"用于××病/症"的<strong>主治</strong>措辞（如"用于经闭痛经""用于脾肺虚弱""用于内热消渴"），属医药表述，对外不可出现。</li>
+<li><strong>部分药食材</strong>：红参、阿胶、熟地黄、生地黄、当归、川芎、白芍、远志、银杏叶、三七、栀子、红花/藏红花、砂仁（含"安胎"）、玉竹、五指毛桃、杜仲叶、肉桂——多数为<strong>非药食同源药材</strong>，注意其身份定位。</li>
+</ul>
+<h3>3.3 检测报告自身的合规护栏（报告已写明）</h3>
+<ul>
+<li>统标检测/证书（TB2510131 补气行血、TB2510132 增强免疫力）与检测报告.pdf 多处写明：<strong>"本实验结论描述仅供科研交流使用""仅用于科研、教学、内部质量控制等目的""本报告不做任何法律纠纷判断依据""仅对来样负责"</strong>。</li>
+<li>⚠️ 这两份"功效类"报告是<strong>斑马鱼（zebrafish）动物实验</strong>得出的"补气行血""增强免疫力"，对象是<strong>開成高儷®1994 非遗陈化高丽参</strong>（不是草本饮成品）。这类<strong>功效/适应症结论</strong>对黑五类产品<strong>不可直接用于对外宣传/功效背书</strong>，只适合作为内部研发/科研佐证。</li>
+<li>检测报告.pdf（SGS 通标大连，DLF25-0024614-01）是<strong>红参阿胶铁元饮（150g/10g×15）</strong>的<strong>感官/微生物/理化合格</strong>报告（感官、霉菌、酵母、沙门氏菌、菌落总数、大肠菌群、固形物、铅、净含量均符合GB/T 31326-2014、GB 7101-2022、JJF 1070-2023）。这是<strong>质量安全类</strong>合格证明，<strong>不是功效证明</strong>；且注意样品是"红参阿胶铁元饮"，与"一参正气草本饮"是不同产品，<strong>不可张冠李戴</strong>。</li>
+</ul>
+<hr />
+<h2>四、与"高丽老红参"品牌的关系</h2>
+<ul>
+<li><strong>品牌</strong>：<strong>開成高儷® / 开成高俪</strong>（1994）。生产企业：<strong>吉林省天壹参草中药饮片有限公司</strong>（地址：临江市桦树镇森铁社区）。</li>
+<li><strong>非遗</strong>：<strong>长白山高丽参炮制技艺</strong>（白山市级非物质文化遗产；文档口径"市级非遗高丽参"）。参品为"<strong>開成高儷®1994 非遗陈化高丽参</strong>"。</li>
+<li><strong>关系链</strong>：高丽参（=红参）是<strong>基底/灵魂原料</strong> → 一参正气草本饮以"<strong>非遗老参为基底</strong>"（即高丽参/红参） → 三款配方中红参/西洋参为君，再按体质配伍草本。</li>
+<li><strong>命名呼应</strong>："<strong>一参</strong>正气"中的"一参"即指<strong>高丽参（红参）</strong>这一味主参；主打"非遗老参为基底"正是把品牌的高丽参资产前置到草本饮上。</li>
+<li><strong>品牌资产背书（来自前序已消化的品牌资料）</strong>：参总皂苷 5.17% vs 当年红参 1.49%（吉林人参研究院检验）；42项农残归零/52项SGS；30年恒温陈化（官方标准：15年以上恒温陈化，30年为代表款）；九蒸九晒、54道非遗工序。这些<strong>属于"高丽老红参"本体</strong>的背书，可作为草本饮"基底"的信任支撑，但注意<strong>不要把它当作草本饮成品的功效证据</strong>。</li>
+<li>⚠️ <strong>口径提醒</strong>（承接前序品牌洞察的存疑项）：非遗是<strong>白山市级、长白山高丽参炮制技艺</strong>，对外<strong>不可说成"国家级/四级/全国仅两家/唯一"</strong>；"招商入驻抖音年份"官方文件2013 vs 2024 打架；"高丽参"=红参，需注意"高丽参≠高丽国原产"的产地歧义，官方口径为长白山。</li>
+</ul>
+<hr />
+<h2>五、数据质量 / 待确认（不能替你圆，如实标出）</h2>
+<ol>
+<li><strong>方N编号冲突</strong>：同文件夹内"方4"同时指"气血平和方（灵芝党参阿胶饮/党参阿胶饮）"和"桃红四物饮"（私人订制/5-桃红四物饮.docx 说"方4"）；药食同源/气血平和方 说"方10"而私人订制/气血平和方 说"方4"。<strong>编号体系不统一，建议对外按"配方名"而非方号。</strong></li>
+<li><strong>同名方克重/配料不一致</strong>：桃红四物饮两版克重不同（桃仁/红花/当归等），且private版加川芎白芍标"不能宣传"、药食同源版标"不妥"；气血平和方两版差异较大（private版有黄芪+当归，药食同源版去掉）；酸枣仁百合饮：private版有远志0.3（不能宣传），药食同源版无远志、大枣1克。<strong>建议以"药食同源版（无纯药食材）"为可对外基准。</strong></li>
+<li><strong>"20味道地原料"= 三配方去重20味</strong>（已核对）✅；但<strong>单配方并非20味</strong>（分别为14/10/10），对外说"20味"时注意是"配方库合计"语义，避免被理解为"一支含20味"。</li>
+<li><strong>气血管理.docx 段落与表格的方号顺序不一致</strong>（段落=方2/方3/方1，表格序=方1/方2/方3），本洞察已按语义对齐，但原始文件易复盘时看错，建议修订原文。</li>
+<li><strong>未处理的非文本文件</strong>：其它/<em>.jpg、</em>.psd（工艺图/包装素材，未读文字，如需可另读）；"包装（红参草本饮）1203c .pdf"无文字层，已渲染视觉读取（仅含三款包装设计稿，无正文说明）。</li>
+<li><strong>红参阿胶铁元饮</strong>（检测报告.pdf）：是与草本饮不同的产品，其SGS合格报告<strong>不能作为草本饮的质量/安全证明</strong>，也不可作为功效证明。</li>
+<li><strong>合规建议（我的判断，供你裁决）</strong>：对外脚本<strong>只能做"非遗老参基底、20味道地原料、5小时鲜制、工艺、便携、温和、无需自己搭配"这类原料/工艺/形态/口感背书</strong>；所有"补气血、益气养血、安神、祛湿、降三高、增强免疫"等功效词、疾病名、中药主治、药材名（尤其川芎/白芍/银杏叶/远志/三七/藏红花）<strong>一律规避</strong>，用"身体状态改善的暗示、生活场景化表达"替代。</li>
+</ol>
+</div>
+</body>
+</html>

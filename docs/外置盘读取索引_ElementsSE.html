@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>外置盘读取索引_ElementsSE</title>
+<style>
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f7f3ee;
+  color: #2b2320;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75;
+}
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fffdf9;
+  padding: 48px 56px;
+  box-shadow: 0 2px 24px rgba(90,30,20,.12);
+  min-height: 100vh;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Songti SC", "STSong", serif;
+  color: #7a1f1a;
+  border-bottom: 3px solid #7a1f1a;
+  padding-bottom: 14px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 22px;
+  font-family: "Songti SC", "STSong", serif;
+  color: #7a1f1a;
+  margin-top: 40px;
+  padding-left: 12px;
+  border-left: 5px solid #c9a227;
+}
+h3 {
+  font-size: 18px;
+  color: #4a2c22;
+  margin-top: 30px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 14.5px;
+  background: #fff;
+}
+th {
+  background: #7a1f1a;
+  color: #f4e6c8;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+td {
+  border: 1px solid #e8ddd2;
+  padding: 9px 12px;
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #fbf7f0; }
+strong { color: #8a231c; }
+blockquote {
+  border-left: 4px solid #c9a227;
+  background: #fdf7e8;
+  margin: 16px 0;
+  padding: 12px 18px;
+  color: #4a3a28;
+  border-radius: 4px;
+}
+code {
+  background: #f0e8dc;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #7a1f1a;
+}
+hr {
+  border: none;
+  border-top: 1px dashed #d8c8b8;
+  margin: 30px 0;
+}
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+h1 em, h2 em { font-style: normal; color: #8a6d2f; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>外置盘读取索引 · Elements SE（2026-08-22）</h1>
+<blockquote>
+<p>目的：因为素材库文件太大无法拷入 iCloud，改为<strong>按绝对路径直接读取硬盘</strong>，结果落工作区。本文件是整盘的高层索引。<br />
+原始盘：<code>/Volumes/Elements SE</code>（1.8TB，已满，90个顶级目录）。</p>
+</blockquote>
+<h2>一、盘的整体定性</h2>
+<p>这个盘是一个<strong>巨型拍摄/素材库</strong>，不是文档库：<br />
+- 绝大多数是<strong>图片（JPG/PNG/ARW/HEIC/DNG，几千张）</strong>、<strong>视频（MP4/MOV/RAW，几百个）</strong>、<strong>脚本（xmind/xlsx）</strong>、PSD/工程文件（JianyingPro 剪映工程）。<br />
+- 按日期命名的目录（12.15 / 2.2 / 3.19 / 6-19 …）是<strong>直播间/拍摄批次素材</strong>，体积巨大。</p>
+<p><strong>结论</strong>：真正能当"语料文字"消化的是少数几个目录里的 docx/xlsx/pdf/txt，其余作为<strong>素材库</strong>登记索引，不逐一视觉读取几千张图。</p>
+<h2>二、已定位的"可读语料"（这是核心）</h2>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>内容</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>东北素材/一参正气/资料/</code></td>
+<td>产品配方方案（私人订制14方案、药食同源方案）、检测报告、包装、调教AI脚本</td>
+<td>子代理消化中</td>
+</tr>
+<tr>
+<td><code>东北素材/高丽参/其它/韩哥文案/</code></td>
+<td>韩宝林成品文案 docx（人设脚本、30岁、如何挑选红参、新手3大坑、中高考家长注意了 等9篇）</td>
+<td>子代理消化中</td>
+</tr>
+<tr>
+<td><code>东北素材/高丽参/其它/大海/视频/</code></td>
+<td>高丽参话术.docx、高丽参QA(韩宝林已修改).docx</td>
+<td>子代理消化中</td>
+</tr>
+<tr>
+<td><code>东北素材/算法与违禁词/</code></td>
+<td>抖音全套违禁词PDF、新版违禁词xlsx、哪些关键词易被推荐docx、直播间违规docx</td>
+<td>子代理消化中</td>
+</tr>
+<tr>
+<td><code>01_语料库/高丽参-文案存档/</code></td>
+<td>品牌资产、检测报告、非遗、陈化年份标准、工艺图（已在工作区内）</td>
+<td>已消化</td>
+</tr>
+<tr>
+<td><code>short-video-copy/</code></td>
+<td>短视频转写 skill（能视频→文案）</td>
+<td>已识别，脚本需装依赖</td>
+</tr>
+</tbody>
+</table>
+<h2>三、素材库分类（不逐一读，登记索引）</h2>
+<p>按目录名可推断内容：视频/图片/录音/航拍/参片展示/高丽参成品/泡酒/泡蜜/泡茶/炖鸡/喝茶/参粉/参苗/鲜参/山货市场/线下药店/形象照/韩哥形象照/东北素材/溯源（苹果/2024/2025）/证书/非遗展/工厂实拍/娘娘精选/商品图/参腿素材/劣质参展示/实验室素材/食用/闻参/闻喝 等。</p>
+<h2>四、下一步可选</h2>
+<ol>
+<li><strong>视频→文案</strong>：素材库里大量 MP4 是韩宝林口播/直播，可用 <code>short-video-copy</code> skill（装 ffmpeg+whisper）批量转写，把视频内容变成文案语料。<strong>这是把"整盘读透"的关键，但需装工具、耗时。</strong></li>
+<li><strong>图片→视觉读</strong>：如需抽样某些关键图（如参片展示、工艺图、陈化对比），可导出视觉读。</li>
+<li>其余素材库按需取用。</li>
+</ol>
+<h2>五、读取原则</h2>
+<ul>
+<li>大文件不拷入 iCloud，留原盘；只在工作区存<strong>抽取的文本/洞察</strong>。</li>
+<li>打脸/出入的事实一律如实标注，不替用户圆。</li>
+</ul>
+</div>
+</body>
+</html>
