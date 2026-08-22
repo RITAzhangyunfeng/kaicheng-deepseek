@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>00_存量用户直播验证方案</title>
+<style>
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f7f3ee;
+  color: #2b2320;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75;
+}
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fffdf9;
+  padding: 48px 56px;
+  box-shadow: 0 2px 24px rgba(90,30,20,.12);
+  min-height: 100vh;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Songti SC", "STSong", serif;
+  color: #7a1f1a;
+  border-bottom: 3px solid #7a1f1a;
+  padding-bottom: 14px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 22px;
+  font-family: "Songti SC", "STSong", serif;
+  color: #7a1f1a;
+  margin-top: 40px;
+  padding-left: 12px;
+  border-left: 5px solid #c9a227;
+}
+h3 {
+  font-size: 18px;
+  color: #4a2c22;
+  margin-top: 30px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 14.5px;
+  background: #fff;
+}
+th {
+  background: #7a1f1a;
+  color: #f4e6c8;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+td {
+  border: 1px solid #e8ddd2;
+  padding: 9px 12px;
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #fbf7f0; }
+strong { color: #8a231c; }
+blockquote {
+  border-left: 4px solid #c9a227;
+  background: #fdf7e8;
+  margin: 16px 0;
+  padding: 12px 18px;
+  color: #4a3a28;
+  border-radius: 4px;
+}
+code {
+  background: #f0e8dc;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #7a1f1a;
+}
+hr {
+  border: none;
+  border-top: 1px dashed #d8c8b8;
+  margin: 30px 0;
+}
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+h1 em, h2 em { font-style: normal; color: #8a6d2f; }
+</style></head><body><div class="wrap"><h1>开成高俪《存量红参用户直播验证方案》</h1>
+<blockquote>
+<p>验证假设：<strong>30-50岁、已经认可红参、正在持续吃参，但对"真假/安全/长期怎么吃/方便程度"不满意的人</strong>——他们需要一个"敢长期吃、每天吃得方便、品质不用反复怀疑的红参"。<br />
+假设证据强度：8.5/10（真实评论成簇 + 正官庄便携款增长41%等外部验证）<br />
+目的：用 3-5 场直播间测试，验证这群人是否真实存在、是否愿意换品牌、最深的痛是什么。<strong>不开发新品，只用现有产品承接一个最接近日用的 SKU。</strong></p>
+</blockquote>
+<hr />
+<h2>1. 测试设计</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>设定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场次</td>
+<td>连续 3-5 场，建议同主播、同时段</td>
+</tr>
+<tr>
+<td>母题</td>
+<td>"已经天天吃红参的人，你现在最担心的到底是什么？"</td>
+</tr>
+<tr>
+<td>目标人群</td>
+<td>正在吃红参/吃过≥3个月的人（含正官庄、新开河等竞品用户）</td>
+</tr>
+<tr>
+<td>反面人群</td>
+<td>参小白（对红参完全没概念的人）——本次不教育</td>
+</tr>
+<tr>
+<td>承接SKU</td>
+<td>现有产品中<strong>最接近日用的一个</strong>（候选：老参片/参片小包装），不扩产品线</td>
+</tr>
+</tbody>
+</table>
+<h2>2. 直播结构（90分钟模板）</h2>
+<p><strong>开场 0-8 分钟（筛选人群）</strong><br />
+- 标题/置顶引导语："<strong>只问一句：你现在天天吃红参吗？吃过3个月以上的家人，今天直播间是给你们开的。</strong>"<br />
+- 老韩开场自白（口播参考）："我做参做了几十年，今天不卖参，就想问问你们这些天天吃参的人——你们心里到底有没有过不踏实的时候？"<br />
+- 弹幕引导：吃过红参的扣1，正在吃的扣"吃了几年"，报一下你现在吃的牌子</p>
+<p><strong>中场 8-60 分钟（问题卡，韩宝林逐题回答）</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>问题（对存量用户）</th>
+<th>韩宝林回答要点</th>
+<th>员工追问/记录要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>你现在吃的参是什么？吃多久了？</td>
+<td>先说"我不评价别人家的参"，再讲自己判断一支参的着眼点</td>
+<td>记录：提及的品牌词频</td>
+</tr>
+<tr>
+<td>2</td>
+<td>你每天吃吗？怎么吃？</td>
+<td>讲日常吃法，顺带讲"长期吃"该有的节奏</td>
+<td>记录：每日吃 vs 想起来才吃</td>
+</tr>
+<tr>
+<td>3</td>
+<td>你担心过真假吗？你是怎么判断的？</td>
+<td>讲"不懂参的人怎么看出真假"的具体方法（不要空谈）</td>
+<td>追问："你有没有怀疑过自己手上的？"</td>
+</tr>
+<tr>
+<td>4</td>
+<td>你怕过"上火"吗？怎么处理的？</td>
+<td>讲体质与参的搭配、出现"上火"信号怎么办</td>
+<td>记录：上火类评论数量</td>
+</tr>
+<tr>
+<td>5</td>
+<td>有没有觉得吃参很麻烦的时候？</td>
+<td>讲整参处理的麻烦 → 引出"参片/日用形态"的价值（自然带出承接SKU）</td>
+<td>记录："麻烦/不方便"类评论</td>
+</tr>
+<tr>
+<td>6</td>
+<td>你一个月在吃参上花多少钱？</td>
+<td>回应"值不值"：好参怎么算账</td>
+<td>弹幕抽样统计花费区间</td>
+</tr>
+<tr>
+<td>7</td>
+<td>你想过换品牌吗？在等什么？</td>
+<td>不贬低竞品，讲"我们和他们不一样在哪"（真年份/非遗/陈化/检测/看得见）</td>
+<td>记录：比较类评论（正官庄/新开河等）</td>
+</tr>
+<tr>
+<td>8</td>
+<td>你希望有一个什么样的红参产品？</td>
+<td>讲"参片/小包装/每天一把"的方向，收集反馈</td>
+<td>记录："想要XX"类产品愿望</td>
+</tr>
+<tr>
+<td>9</td>
+<td>如果有一支参你敢天天吃、不用怀疑，你会坚持吗？</td>
+<td>讲"长期信任"靠什么建立</td>
+<td>观察反应强度</td>
+</tr>
+<tr>
+<td>10</td>
+<td>老韩的收尾反问："你们最想让我替你们解决的，到底是什么？"</td>
+<td>把话筒还给用户</td>
+<td>评论区归类，标记高频词</td>
+</tr>
+</tbody>
+</table>
+<p><strong>收尾 60-90 分钟（承接与转化）</strong><br />
+- 承接话术："今天听你们说了这么多，我确定了一件事——长期吃参的人，缺的不是好参，是不用反复怀疑的参。"<br />
+- 承接SKU 上架（老参片/小包装），讲清楚"为什么先给你这个"<br />
+- 私域钩子：加微信领"<strong>长期吃参人群专属</strong>"内容（体质判断 + 吃参自查清单），强调不是卖货，是回访<br />
+- 预告下场："下一场我专门讲：怎么用 3 个方法判断你手上的参真不真"</p>
+<h2>3. 数据记录表（每场必填）</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>记录方式</th>
+<th>目标值（相对判断）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>存量用户占比</td>
+<td>扣1/评论中"吃过≥3个月"比例</td>
+<td>越高越好，≥30% 才算成立</td>
+</tr>
+<tr>
+<td>正在吃哪个品牌</td>
+<td>弹幕/评论品牌词频统计</td>
+<td>看分散度：越分散说明市场机会越大</td>
+</tr>
+<tr>
+<td>月花费</td>
+<td>弹幕抽样 + 评论区估算</td>
+<td>记录分布，不设目标</td>
+</tr>
+<tr>
+<td>换品牌顾虑</td>
+<td>评论归类：真假/年份/硫磺/上火/方便/价格/品牌比较/其他</td>
+<td>找出 Top3 痛点</td>
+</tr>
+<tr>
+<td>咨询率</td>
+<td>私信/小风车/商品点击</td>
+<td>记录</td>
+</tr>
+<tr>
+<td>首单成交</td>
+<td>承接SKU 销量</td>
+<td>记录</td>
+</tr>
+<tr>
+<td>复购意向</td>
+<td>加私域后 30 天内回访/复购</td>
+<td>记录（重点）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>评论关键词归类表（每场 48 小时内完成）</strong>：</p>
+<pre><code>真假类：____  年份类：____  硫磺/加工类：____  上火类：____
+方便类：____  价格类：____  品牌比较类：____  其他：____
+</code></pre>
+<h2>4. 判读标准（3-5 场后）</h2>
+<p><strong>通过信号（坡成立）</strong>：<br />
+- 直播间里大量竞品在用用户（正官庄/新开河等）出现，且主动问"你们和他们有什么区别"<br />
+- "换品牌顾虑"类评论成为 Top 痛点，且集中在真假/年份/长期安全<br />
+- 咨询率高，承接 SKU 出首单，且私域加微后 30 天出现复购<br />
+- 评论中反复出现"想要小包装/参片/每天方便"类需求</p>
+<p><strong>失败信号（假设不成立）</strong>：<br />
+- 来的基本都是参小白，问基础问题（"红参是什么""怎么吃"）<br />
+- 存量用户占比长期 &lt;20%，无换品牌意愿表达<br />
+- "担心"类评论稀疏，无法归类出 Top 痛点</p>
+<p><strong>不确定</strong>：再加测 2 场，或换母题角度（如"你手上那支参，敢不敢拍成分表给我看"）。</p>
+<h2>5. 决策树</h2>
+<pre><code>3-5场测试数据
+├─ 通过 → 收窄定位：先成为&quot;懂红参、长期吃红参的人换品牌时，第一个想到的中国红参&quot;
+│        → 承接：日用SKU（参片小包装）持续打磨
+│        → 内容：从真实长期用户反推驱动因素（精力/气血/40+状态/送礼）
+│        → 私域：建立&quot;长期吃参人群&quot;会员/订阅模型（终极形态验证）
+├─ 存疑 → 加测2场 或 调整母题 → 回到本表
+└─ 失败 → 放弃本假设，全力转&quot;女性气血补对&quot;线（8/10）
+</code></pre>
+<h2>6. 纪律与红线</h2>
+<ol>
+<li><strong>不教育参小白</strong>：母题已明确筛选，主播不要被带偏去讲入门知识</li>
+<li><strong>不贬低竞品</strong>：可以讲"我们不一样"，不评价"别人不好"</li>
+<li><strong>不扩产品线</strong>：无论反馈多热闹，只承接一个日用 SKU</li>
+<li><strong>每场 48 小时内</strong>完成评论归类，数据不过夜</li>
+<li><strong>评论是市场探测器</strong>：所有追问按"她的真实生活场景"记录（什么人/什么时间/什么状态），进场景库候选</li>
+</ol></div></body></html>
